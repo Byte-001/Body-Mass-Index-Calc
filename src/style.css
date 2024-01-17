@@ -92,3 +92,15 @@ input[type="number"]::-webkit-outer-spin-button{
 .calculator > div > button:focus{
     outline:none;
 }
+
+#result{
+    text-align: center;
+}
+
+#result > #bmi{
+    font-size: 2rem;
+}
+
+#result > #desc strong{
+    text-transform: uppercase;
+}
