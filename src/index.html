@@ -12,31 +12,21 @@
 
 <body>
     <div id="container"> 
-     <form action="#">
-        <div class="input-box">
-          <input type="text" id="weight" autocomplete="off" required placeholder="Your weight...">
-        
-          <div class="input-box">
-            <input type="text" id="height" autocomplete="off" required placeholder="Your height (as cm)...">
-        </div>  
-       
-       <div class="input-box">
-            <label for="gender">Gender</label>
-            <input type="radio" name="gender" id="gender-male"><p>Male</p>
-            <input type="radio" name="gender" id="gender-female"><p>Female</p>
-        </div>
-
-        <div class="input-box">
-            <input type="text" name="age" id="age" autocomplete="off" required placeholder="Your age...">
-        </div>
-
-        <button id="calculate-btn" type="submit">Calculate BMI</button>
-
-        <div id="result">
-            <p id="BMI-result">Your BMI:</p>
-        </div>
-           </form>
-        </div>
+        <h1>BMI Calculator</h1>
+        <form action="#" class="calculator">
+            <div>
+                <label for="weight">Weight (kg)</label>
+                <input type="number" autocomplete="off" required id="weight" min="0" step="0.01" value="0">
+            </div>
+            <div>
+                <label for="height">Height (cm)</label>
+                <input type="number" autocomplete="of" required id="height" min="0" step="0.01" value="0">
+            </div>
+            <div>
+                <button type="submit" id="calculateBtn">Calculate</button>
+                <button type="reset" id="resetBtn">Reset</button>
+            </div>
+        </form>
     </div>
     <script src="index.js"></script>
 </body>
